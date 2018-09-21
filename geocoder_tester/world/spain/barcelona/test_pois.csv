@@ -1,0 +1,12 @@
+query,lon,lat,limit,expected_name,expected_housenumber,expected_street,expected_city,expected_postcode
+hcc lugano,,,4,HCC Lugano,,,Barcelona,
+barcelona crowne plaza,,,4,Crowne Plaza,,,Barcelona,
+La Sagrada Familia,,,4,La Sagrada Familia,,,Barcelona,
+Barcelona Sants,,,4,Barcelona Sants,,,Barcelona,
+Font Màgica de Montjuïc,,,4,Font Màgica de Montjuïc,,,Barcelona,
+Jardí botànic històric,,,4,Jardí botànic històric,,,Barcelona,
+Capella Castrense,,,4,Capella Castrense,,,Barcelona,
+Arc de Triomf,,,4,Arc de Triomf,,,Barcelona,
+Plaça de Salvador Seguí,,,4,Plaça de Salvador Seguí,,,Barcelona,
+Jardins de Sant Pau del Camp,,,4,Jardins de Sant Pau del Camp,,,Barcelona,
+El Sortidor,,,4,El Sortidor,,,Barcelona,
