@@ -1,12 +1,9 @@
 [[source]]
-
 name = "pypi"
 url = "https://pypi.python.org/simple"
 verify_ssl = true
 
-
 [packages]
-
 pytest = "*"
 requests = "*"
 pyaml = "*"
@@ -14,8 +11,7 @@ geopy = "*"
 unidecode = "*"
 allure-pytest = "*"
 invoke = "*"
-
+pandas = "*"
 
 [dev-packages]
-
 ipython = "*"

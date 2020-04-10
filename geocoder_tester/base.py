@@ -7,6 +7,8 @@ from geopy.distance import distance
 from unidecode import unidecode
 from collections import defaultdict
 
+import pandas as pd
+from time import time
 
 POTSDAM = [52.3879, 13.0582]
 BERLIN = [52.519854, 13.438596]
@@ -23,6 +25,8 @@ CONFIG = {
 }
 
 http = requests.Session()
+
+times = pd.DataFrame(columns=["url", "delay"])
 
 
 def get_properties(f):
@@ -175,12 +179,23 @@ class SearchException(Exception):
 
 
 def search(**params):
+    # Exclude addresses in search
+    # params["type[]"] = ["street", "poi", "zone"]
     kwargs = {
         "params": params
     }
     if CONFIG['HTTPS_NO_VERIFY']:
         kwargs['verify'] = False
+
+    start = time()
     r = http.get(CONFIG['API_URL'], **kwargs)
+    delay = time() - start
+
+    times.loc[len(times)] = {
+        "url": r.request.url,
+        "delay": int(delay*1000)
+    }
+
     if not r.status_code == 200:
         raise HttpSearchException(error="Non 200 response")
     return r.json()

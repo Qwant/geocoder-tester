@@ -5,7 +5,7 @@ import yaml
 
 import pytest
 
-from geocoder_tester.base import assert_search, CONFIG
+from geocoder_tester.base import assert_search, CONFIG, times
 
 
 def pytest_collect_file(parent, path):
@@ -98,6 +98,9 @@ def pytest_configure(config):
 
 
 def pytest_unconfigure(config):
+
+    times.to_csv('times_report.csv')
+
     if config.getoption('--save-report'):
         with open(config.getoption('--save-report'), mode='w',
                   encoding='utf-8') as f:
