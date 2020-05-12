@@ -2,21 +2,29 @@
 
 Run search queries against a geocoder that supports [geocodejson spec](https://github.com/geocoders/geocodejson-spec).
 
-## Intalling
+## Installing
 
 - create a python >= 3.4 [virtualenv](http://docs.python-guide.org/en/latest/dev/virtualenvs/) environment
 - `git clone https://github.com/geocoders/geocoder-tester && cd geocoder-tester`
 - `pip install -r requirements.txt`
+
+An alternative is to use `pipenv`:
+
+- `pipenv install`
 
 ## Running
 
 Simply:
 
     py.test
+    # or with pipenv:
+    pipenv run py.test
 
 For a global help, type:
 
     py.test -h
+
+Look at the "custom options" section for `geocoder-tester` specific options.
 
 Tests are split by geographical area, so you can run only a subset of all the tests,
 for example because your local database only contains a small area, or because you want
