@@ -199,7 +199,7 @@ def compare_values(get, expected):
 
 def assert_search(query, expected, limit=1,
                   comment=None, lang=None, center=None,
-                  max_matches=None):
+                  max_matches=None, radius=None):
     query_limit = max(CONFIG['CHECK_DUPLICATES'] or 0, int(limit))
     params = {"q": query, "limit": query_limit}
     if lang:
@@ -207,6 +207,8 @@ def assert_search(query, expected, limit=1,
     if center:
         params['lat'] = center[0]
         params['lon'] = center[1]
+    if radius:
+        params['radius'] = radius
     raw_results = search(**params)
     results = raw_results['features'][:int(limit)]
 
