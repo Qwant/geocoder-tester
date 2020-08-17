@@ -109,6 +109,7 @@ Optional columns:
 * `limit`: decide how many results you want to look at for finding your result
 (default: 1)
 * `lat`, `lon`: if you want to add a center for the search
+* `radius`: configure the approximate radius for the search, in kilometers (default: TODO)
 * `comment`: if you want to take control of the ouput of the test in the
 command line
 * `lang`: language
