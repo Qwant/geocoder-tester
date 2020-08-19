@@ -1,7 +1,7 @@
-query;lat;lon;radius;limit;lang;expected_name;expected_housenumber;expected_street;expected_city;expected_postcode;expected_country
+query;lat;lon;radius;limit;lang;expected_name;expected_housenumber;expected_street;expected_city;expected_postcode;expected_coordinate
 cathédrale notre dame;47.0778819;3.2747108;500;1;fr;Cathédrale Notre-Dame;;;Paris;75004;
 cathédrale notre dame;45.7937570;-73.6104255;500;1;fr;Basilique cathédrale Notre-Dame-de-Québec;;;Québec;;
-normale sup;47.0778819;3.2747108;500;1;fr;École normale supérieure - Université PSL;;;Paris;75009;
+normale sup;47.0778819;3.2747108;500;1;fr;École normale supérieure - Université PSL;;;Paris;;
 normale sup;42.6156839;12.3164424;500;1;fr;Scuola Normale Superiore;;;Pisa;56126;
 louvre;48.8549087;2.3428067;30;1;fr;Musée du Louvre;;;Paris;75001;
 louvre;50.4426796;2.8228790;30;1;fr;Louvre Lens;;;Lens;62300;
@@ -11,9 +11,9 @@ rue des tennis;48.8536903;2.3358433;30;1;fr;Rue des Tennis;;;Paris;75018;
 rue des tennis;47.9822568;0.1603311;30;1;fr;Rue des Tennis;;;Le Mans;;
 rue saint émilion;44.8362641;-0.5839494;30;1;fr;Rue de Saint-Émilion;;;Bordeaux;;
 rue saint émilion;45.7145486;-0.5631468;30;1;fr;Rue du Saint-Emilion;;;Chaniers;17610;
-milan;39.0566031;-99.7834429;1000;1;fr;Milan;;;;;United States
-milan;43.0195313;12.3970667;1000;1;fr;Milan;;;;;Italia
-villeneuve;47.0778819;3.2747108;500;Villeneuve;;;;;France
-villeneuve;-26.8442970;131.0716250;500;Villeneuve;;;;;Australia
-richebourg;48.8590244;2.3385286;50;Richebourg;;;;78550;
-richebourg;50.6302844;3.0605593;50;Richebourg;;;;62136;
+milan;43.0195313;12.3970667;1000;1;fr;Milan;;;;;45.4043815,8.978141,50000
+milan;-99.7834429;40;1000;1;fr;Milan;;;;;37.2597959,-97.6732042,50000
+villeneuve;47.0778819;3.2747108;500;1;fr;Villeneuve;;;;;
+villeneuve;-26.8442970;131.0716250;500;1;fr;Villeneuve;;;;;
+richebourg;48.8590244;2.3385286;50;1;fr;Richebourg;;;;;48.8265237,1.6359872,10000
+richebourg;52.6302844;3.0605593;50;1;fr;Richebourg;;;;;50.5824045,2.7284325,10000
