@@ -160,7 +160,7 @@ class BaseFlatItem(pytest.Item):
         super().__init__(name, parent)
         self.lat = kwargs.get('lat')
         self.lon = kwargs.get('lon')
-        self.radius = kwargs.get('radius')
+        self.zoom = kwargs.get('zoom')
         self.lang = kwargs.get('lang')
         self.limit = kwargs.get('limit')
         self.comment = kwargs.get('comment')
@@ -185,7 +185,7 @@ class BaseFlatItem(pytest.Item):
             'lang': self.lang,
             'comment': self.comment,
             'max_matches': self.max_matches,
-            'radius': self.radius,
+            'zoom': self.zoom,
         }
         if self.lat and self.lon:
             kwargs['center'] = [self.lat, self.lon]
