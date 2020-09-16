@@ -109,6 +109,7 @@ Optional columns:
 * `limit`: decide how many results you want to look at for finding your result
 (default: 1)
 * `lat`, `lon`: if you want to add a center for the search
+* `zoom`: the zoom level of the map where the query originates. This will impact the radius scale of the focused search (optional)
 * `comment`: if you want to take control of the ouput of the test in the
 command line
 * `lang`: language
